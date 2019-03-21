@@ -1,1 +1,28 @@
 // Navigation Styles here
+@navHeight: 80px;
+@aTagMargin: 20px;
+
+@navTextSize: 14px;
+.navStyle()
+{
+    height: @navHeight;
+    border-bottom: 2px dashed lightGrey;
+}
+
+.navFlex(@flexDir: row)
+{
+    display: flex;
+    flex-direction: @flexDir;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-aTagStyle(){
+    margin: @aTagMargin;
+    text-decoration: none;
+    font-size: @navTextSize;
+    font-weight: bold;
+    color: black;
+    
+}
