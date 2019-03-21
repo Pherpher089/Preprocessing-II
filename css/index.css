@@ -270,3 +270,60 @@ img {
   font-size: 16px;
   border-radius: 12px;
 }
+@media (max-width: 500px) {
+  .container .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 2px dashed lightG      rey;
+  }
+  .container .nav nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+  }
+  .container .top-content {
+    width: 400px;
+  }
+  .container .content-section.a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content-section.a .text-content {
+    width: 400px;
+  }
+  .container .content-section.b {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content-section.b .text-content {
+    width: 400px;
+  }
+  .container .content-section.b .img-contnent {
+    width: 400px;
+  }
+  .container .content-destination {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content-pick .destination {
+    width: 400px;
+  }
+}

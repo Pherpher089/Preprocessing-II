@@ -24,10 +24,62 @@
 }
 
 .btn{
-    
+
     .btn(green);
 
     &:hover{
         .btn(darkgreen)
+    }
+}
+
+@media @mobile{
+    .container{
+        .nav{
+            .navFlex(column);
+            .navStyle();
+        
+            nav{
+                a{
+                    .nav-aTagStyle();
+                }
+            }
+        }
+
+        .top-content{
+            width: @mobileWidth;
+        }
+
+        .content-section{
+            &.a{
+                .navFlex(column); 
+                .text-content{
+                    width: @mobileWidth;            
+
+                }
+            }
+            &.b{
+                .navFlex(column-reverse);
+                .text-content{
+                    width: @mobileWidth;            
+
+                } 
+
+                .img-contnent{
+                    width: @mobileWidth;
+                }
+            }
+        }
+
+        .content-destination{
+            width: @mobileWidth;
+            .navFlex(column);
+        }
+
+        .content-pick{
+            .navFlex(column);
+            .destination{
+                width: @mobileWidth;
+            }
+        }
     }
 }
